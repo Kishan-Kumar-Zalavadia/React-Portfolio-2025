@@ -13,7 +13,7 @@ const Path = (props) => {
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scope, animate] = useState();
+  const [scope, animate] = useAnimate();
 
   useEffect(() => {
     const menuAnimate = isOpen
@@ -25,7 +25,7 @@ export default function Navbar() {
           ],
           [
             "li",
-            { transform: "scale(1)", opacity: 1, filter: "blur(10px)" },
+            { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
             { delay: stagger(0.5), at: "-0.1" },
           ],
         ]
