@@ -26,14 +26,14 @@ export default function Navbar() {
           [
             "li",
             { transform: "scale(1)", opacity: 1, filter: "blur(0px)" },
-            { delay: stagger(0.5), at: "-0.1" },
+            { delay: stagger(0.05), at: "-0.1" },
           ],
         ]
       : [
           [
             "li",
             { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
-            { delay: stagger(0.5, { from: "last" }), at: "<" },
+            { delay: stagger(0.05, { from: "last" }), at: "<" },
           ],
           ["nav", { transform: "translateX(-100%)" }, { at: "-0.1" }],
         ];
